@@ -1,0 +1,92 @@
+/* Container for the Raise Note component */
+.raise-container {
+    padding: 20px;
+    min-width: 50rem; /* Minimum width for larger screens */
+    width: 100%; 
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Title styling */
+.raise-title {
+    font-size: 28px;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+/* Form styling */
+.raise-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Input field styling */
+.raise-input {
+    padding: 10px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+/* Input field focus styling */
+.raise-input:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+/* Button styling */
+.raise-button {
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+    color: white;
+    background-color: #27ae60;
+    transition: background-color 0.3s ease;
+}
+
+/* Button hover styling */
+.raise-button:hover {
+    background-color: #2ecc71;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .raise-container {
+        margin-top: 6rem;
+        min-width: 20rem; /* Minimum width for medium screens */
+        max-width: 90%; /* Allow the container to grow */
+        width: 90%; 
+    }
+    .raise-form {
+        margin-top: 1rem;
+    }
+}
+
+@media (max-width: 450px) {
+    .raise-container {
+        margin-top: 6rem;
+        min-width: 15rem; /* Further reduced minimum width for small screens */
+        max-width: 90%; /* Keep it 90% for small screens */
+        width: 90%; 
+    }
+    .raise-form {
+        margin-top: 1rem;
+    }
+}
+
+/* Label styling */
+.raise-label {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #34495e;
+    text-align: left; 
+}

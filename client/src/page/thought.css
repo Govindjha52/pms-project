@@ -1,0 +1,36 @@
+/* Center the quote on the page */
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0; /* Light grey background */
+  }
+  
+  /* Style for the paragraph containing the quote */
+  p {
+    font-size: 1.5rem;
+    color: #333;
+    font-style: italic;
+    text-align: center;
+    width: 60%; /* Set a fixed width to make it readable */
+    line-height: 1.6;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Soft shadow effect */
+  }
+  
+  /* Add transition effect when the quote appears */
+  p {
+    transition: opacity 0.5s ease-in-out;
+    opacity: 0;
+  }
+  
+  p.show {
+    opacity: 1;
+  }
+  

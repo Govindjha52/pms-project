@@ -1,0 +1,91 @@
+/* General reset for margins and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Main container for the MyAccount component */
+  main {
+    max-width: 600px; /* Maximum width of the account section */
+    margin: 50px auto; /* Center the container */
+    padding: 20px; /* Padding inside the container */
+    border: 1px solid #ddd; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    background-color: #ffffff; /* White background */
+  }
+  
+  /* Heading style */
+  h2 {
+    text-align: center; /* Center the text */
+    color: #333; /* Dark gray color */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  /* Paragraph styles */
+  p {
+    font-size: 18px; /* Font size for paragraphs */
+    color: #555; /* Medium gray color */
+    margin: 10px 0; /* Space above and below paragraphs */
+  }
+  
+  /* Button styling */
+  button {
+    width: 150px; /* Fixed width for buttons */
+    padding: 10px; /* Padding inside the button */
+    margin: 10px; /* Space around buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    color: white; /* Text color */
+    font-size: 16px; /* Font size */
+    cursor: pointer; /* Pointer cursor */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+  }
+  
+  /* Specific button styles */
+  button:nth-of-type(1) {
+    background-color: #007bff; /* Blue for Raise Note */
+  }
+  
+  button:nth-of-type(2) {
+    background-color: #28a745; /* Green for Accept Note */
+  }
+  
+  button:nth-of-type(3) {
+    background-color: #ffc107; /* Yellow for Withdraw Amount */
+  }
+  
+  /* Button hover effects */
+  button:nth-of-type(1):hover {
+    background-color: #0056b3; /* Darker shade on hover for Raise Note */
+  }
+  
+  button:nth-of-type(2):hover {
+    background-color: #218838; /* Darker green on hover for Accept Note */
+  }
+  
+  button:nth-of-type(3):hover {
+    background-color: #e0a800; /* Darker yellow on hover for Withdraw Amount */
+  }
+  
+  /* Responsive design adjustments */
+  @media (max-width: 480px) {
+    main {
+      padding: 15px; /* Less padding on small screens */
+    }
+  
+    h2 {
+      font-size: 24px; /* Smaller font size for heading */
+    }
+  
+    p {
+      font-size: 16px; /* Smaller font size for paragraphs */
+    }
+  
+    button {
+      width: 100%; /* Full width for buttons on small screens */
+      font-size: 14px; /* Smaller font size for buttons */
+    }
+  }
+  
