@@ -1,5 +1,5 @@
 import './footer.css';
-import Feedback from '../footer_comp/feedback';
+// import Feedback from '../footer_comp/feedback';
 
 const scrollToTop = () => {
   window.scrollTo({
@@ -51,7 +51,7 @@ const Footer = () => {
         <ul>
           <li><strong>Let Us Help You</strong></li>
           <li><a href="/my-account">Your Account</a></li>
-          <li><a href="../footer_comp/feedback" onClick={<Feedback/>}>Feedback</a></li>
+          {/* <li><a href="../footer_comp/feedback" onClick={<Feedback/>}>Feedback</a></li> */}
           <li><a href="#">Customer Support</a></li>
           <li><a href="#">Help</a></li>
         </ul>

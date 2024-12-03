@@ -1,7 +1,7 @@
 import './header.css';
 // eslint-disable-next-line no-unused-vars
 import React, { useState, useEffect } from 'react';
-import logo from '../assets/logo1.png';
+import logo from '../assests/logo1.png';
 import { FaBell } from 'react-icons/fa';
 import PropTypes from 'prop-types';
 
