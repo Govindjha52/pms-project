@@ -3,8 +3,8 @@ const cors = require('cors');
 const bodyParser = require('body-parser');
 const connectDB = require('./config/db');
 
-const authRoutes = require('./routes/auth');
-const notesRoutes = require('./routes/notes');
+const authRoutes = require('./routes/authRoutes');
+const notesRoutes = require('./routes/note');
 const transactionsRoutes = require('./routes/transactions');
 const accountRoutes = require('./routes/account');
 
@@ -19,12 +19,12 @@ app.use(cors());
 app.use(bodyParser.json());
 
 // Routes
-app.use('/api/auth', authRoutes);
-app.use('/api/notes', notesRoutes);
-app.use('/api/transactions', transactionsRoutes);
+app.use('./api/authRoutes', authRoutes);
+app.use('./api/note', notesRoutes);
+app.use('./api/transactions', transactionsRoutes);
 app.use('/api/account', accountRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
-  console.log(`Server running on port ${PORT}`);
+    console.log(`Server running on port ${PORT}`);
 });

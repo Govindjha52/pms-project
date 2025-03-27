@@ -7,5 +7,6 @@ router.post('/register', registerUser);
 
 // Login route
 router.post('/login', loginUser);
+router.post('/forgot-password', Reset);
 
 module.exports = router;
