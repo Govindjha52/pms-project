@@ -1,0 +1,66 @@
+/* forgot.css */
+
+#forgot-password-form {
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+#forgot-password-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+#forgot-password-form label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+#forgot-email-input,
+.pass {
+    background-position: left;
+    background-image: url('/src/assests/gmail.png');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    outline: 0;
+}
+
+.pass {
+    background-image: url('../../assests/password.png');
+}
+
+#forgot-password-form input {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    padding-left: 75px;
+}
+
+#forgot-password-form input::placeholder {
+    color: #888;
+}
+
+#forgot-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#forgot-button:hover {
+    background-color: #45a049;
+}

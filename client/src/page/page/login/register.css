@@ -1,0 +1,84 @@
+/* register.css */
+
+#register-form {
+    max-width: 600px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: auto;
+}
+
+#register-form h2 {
+    text-align: center;
+    color: #333;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-around;
+}
+
+#register-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #333;
+}
+
+#register-form input,
+#register-form select {
+    outline: 0;
+    width: 100%;
+    padding: 15px;
+    margin-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    padding-left: 75px;
+}
+
+#register-form input::placeholder {
+    color: #888;
+}
+
+#register-button,
+#back-to-login-button {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+#back-to-login-button {
+    background-color: #555;
+    margin-top: 5px;
+}
+
+#register-button:hover,
+#back-to-login-button:hover {
+    background-color: #333;
+}
+
+.pass,
+.user,
+.role {
+    background-position: left;
+    background-image: url('/src/assests/gmail.png');
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+}
+
+.user {
+    background-image: url('../../assests/user.png');
+}
+
+.role {
+    background-size: 30px;
+    background-image: url('../../assests/role.png');
+}

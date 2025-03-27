@@ -1,0 +1,265 @@
+/* Container for the Home page */
+
+.home-container {
+    padding: 20px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Margin for smaller screens */
+
+@media (max-width: 768px) {
+    .home-container {
+        margin-top: 4.1rem;
+        /* For small screens */
+    }
+}
+
+
+/* Margin for larger screens */
+
+@media (min-width: 769px) {
+    .home-container {
+        margin-top: -2.1rem;
+    }
+}
+
+
+/* Title styling */
+
+.home-title {
+    font-size: 32px;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+/* Subtitle styling */
+
+.home-subtitle {
+    font-size: 20px;
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-weight: 400;
+}
+
+
+/* Notification section container */
+
+.notification-section {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+
+/* List styling */
+
+.notification-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* Individual notification item styling */
+
+.notification-item {
+    background: #ffffff;
+    margin-bottom: 15px;
+    padding: 20px;
+    border: 1px solid #dcdde1;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: all 0.3s ease;
+}
+
+.notification-item:hover {
+    background: #f4f6f7;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Details section of each notification */
+
+.note-details {
+    text-align: left;
+    flex: 1;
+}
+
+
+/* Styling for the individual details in the notification */
+
+.note-details p {
+    margin: 5px 0;
+    font-size: 16px;
+    color: #2c3e50;
+}
+
+
+/* Buttons container */
+
+.note-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+
+/* General button styling */
+
+.btn {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+
+/* Accept button styling */
+
+.accept-btn {
+    background-color: #27ae60;
+    color: white;
+}
+
+.accept-btn:hover {
+    background-color: #2ecc71;
+}
+
+
+/* Discard button styling */
+
+.discard-btn {
+    background-color: #c0392b;
+    color: white;
+}
+
+.discard-btn:hover {
+    background-color: #e74c3c;
+}
+
+
+/* Empty state message container */
+
+.no-notifications {
+    background-color: #e0e0e0;
+    padding: 40px;
+    border-radius: 10px;
+    margin-top: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Text styling for empty state */
+
+.no-notifications h3 {
+    color: #7f8c8d;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.no-notifications p {
+    color: #95a5a6;
+    font-size: 16px;
+}
+
+
+/* Styling for platform information */
+
+.platform-info {
+    background: #ecf0f1;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+}
+
+.platform-info h3 {
+    color: #34495e;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.platform-info p {
+    color: #2c3e50;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+/* Responsive design */
+
+@media (max-width: 768px) {
+    .notification-item {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .note-actions {
+        flex-direction: row;
+        margin-top: 10px;
+    }
+    .btn {
+        padding: 8px 12px;
+        font-size: 12px;
+    }
+    body {
+        background-color: #f2f2f2;
+    }
+}
+
+
+/* Thought section styling */
+
+.thought {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.thought h3 {
+    background: aliceblue;
+    padding: 10px 0px;
+    font-size: 24px;
+    color: #34495e;
+}
+
+.thought p {
+    font-size: 20px;
+    color: #2c3e50;
+    font-style: italic;
+    line-height: 1.6;
+    animation: fadeIn 0.8s ease-in-out;
+}
+
+
+/* Add a subtle fade-in animation for the quote */
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(-10px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
