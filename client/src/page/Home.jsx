@@ -13,9 +13,7 @@ const Home = ({ notifications }) => {
         console.log('Notifications updated:', notifications);
     }, [notifications]); 
 
-    return (
-        
-        
+    return (     
         <main className="home-container">
             <h1 className="home-title">Proxy Management System</h1>
             <p className="home-subtitle">Manage lectures seamlessly without interruptions</p>

@@ -1,6 +1,4 @@
 import './footer.css';
-// import Feedback from '../footer_comp/feedback';
-
 const scrollToTop = () => {
   window.scrollTo({
     top: 0,
@@ -11,11 +9,10 @@ const scrollToTop = () => {
 const Footer = () => {
   return (
     <footer className="footer">
-      {/* Back to Top Section */}
+      {/* scroll from bottom to top */}
       <div className="foot-panel1" onClick={scrollToTop}>
         Back to Top
       </div>
-      <hr />
 
       {/* Get to Know Us Section */}
       <div className="foot-panel2">
@@ -39,7 +36,8 @@ const Footer = () => {
 
         {/* Material Provider Section */}
         <ul>
-          <li><strong>Material Provider for CSE Students</strong></li>
+          <li><strong>Material Provider  <br />
+            for CSE Students</strong></li>
           <li><a href="#">Learning Platform</a></li>
           <li><a href="#">Build Your Skills</a></li>
           <li><a href="#">All Materials Available</a></li>
@@ -56,19 +54,19 @@ const Footer = () => {
           <li><a href="#">Help</a></li>
         </ul>
       </div>
-      <hr />
 
       {/* Contact Information Section */}
       <div className="foot-panel3">
         <div className="contact-info">
-          <p>Contact Us: +91 9508779910</p>
-          <a href="pms@gmail.com">Email Us: pms@gmail.com</a>
-          <p>Visit us at:</p>
+        <a href="tel:+77449 (800) 675-2760"> Contact Us: +91 9508779910 </a> <br />
+        <a href="mailto:marketing@consumercoverage.com"> Email Us: pms@gmail.com  </a>
+        <span>
+        <p>Visit us at:</p>
           <address>Parul University, Vadodara, Gujarat, India</address>
+        </span>
+         
         </div>
       </div>
-
-      <hr />
 
       {/* Footer Links and Copyright Section */}
       <div className="foot-panel4">
@@ -78,10 +76,10 @@ const Footer = () => {
           <a href="#">Interest-Based Ads</a>
         </div>
         <div className="copyright">
-          &copy; 2024. All the word are reserved || Proxy Management System Platform.com, Inc. or its affiliates.
+          <a href="#">&copy; 2024. All the word are reserved || Proxy Management System Platform.com, Inc. or its affiliates.</a>
         </div>
       </div>
-      <hr />
+
     </footer>
   );
 };

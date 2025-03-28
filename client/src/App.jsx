@@ -9,9 +9,10 @@ import MyAccount from './page/My_account';
 import Transaction from './page/Transaction_History'; 
 import MyWallet from './page/Mywallet'; 
 import Login from './page/login/login';
-import Register from './page/login/register'; // Add Register component import
-import Forgot from './page/login/forgot'; // Add Forgot component import
-// eslint-disable-next-line no-unused-vars
+import Register from './page/login/register';
+import Forgot from './page/login/forgot'; 
+
+
 import React, { useState } from 'react';
 
 function App() {
@@ -37,8 +38,8 @@ function App() {
                     <Route path="/transaction-history" element={<Transaction notifications={notifications} />} />
                     <Route path="/my-wallet" element={<MyWallet />} />
                     <Route path="/login" element={<Login />} />
-                    <Route path="/registration" element={<Register />} /> {/* Add register route */}
-                    <Route path="/forgot-password" element={<Forgot />} /> {/* Add forgot password route */}
+                    <Route path="/registration" element={<Register />} /> 
+                    <Route path="/forgot-password" element={<Forgot />} /> 
                 </Routes>
                 <Footer />
             </div>

@@ -22,17 +22,18 @@ const Raise = ({ onNoteRaised }) => {
             alert('Please fill in all fields.');
             return;
         }
-
         // Ensure startTime is greater than the current time
         if (start <= currentTime) {
             alert('Starting time should be greater than the current time.');
             return;
         }
-
         // Ensure startTime is less than endTime
         if (start >= end) {
             alert('Ending time should be greater than starting time.');
             return;
+        }
+        else{
+            alert('Your Note is Successfully Raised....!')
         }
 
         const newNote = {
@@ -44,7 +45,7 @@ const Raise = ({ onNoteRaised }) => {
             startTime: start.toString(),
             endTime: end.toString(),
             id: Date.now(),
-            expired: false,  // Add expiration flag
+            expired: false,  
         };
 
         onNoteRaised(newNote);
@@ -56,6 +57,8 @@ const Raise = ({ onNoteRaised }) => {
             onNoteExpired(newNote.id);
         }, classDuration);
     };
+
+
 
     // Function to reset the input fields
     const resetForm = () => {
@@ -70,16 +73,14 @@ const Raise = ({ onNoteRaised }) => {
 
     // Function to handle note expiration
     const onNoteExpired = (noteId) => {
-        // Call this function when a note expires
         console.log(`Note with ID ${noteId} has expired.`);
-        // You can trigger a state update or display logic here to show it as expired in the UI
-        // Example: You could pass a callback from the parent to mark the note as expired
+        
     };
 
     return (
         <main className="raise-container">
             <h2 className="raise-title">Raise a Note</h2>
-            <div className="raise-form">
+            <div className="raise-form">     
                 <input
                     type="text"
                     value={yourname}
@@ -87,6 +88,7 @@ const Raise = ({ onNoteRaised }) => {
                     placeholder="Enter your name here:"
                     className="raise-input"
                 />
+
                 <input
                     type="text"
                     value={reason}
@@ -94,13 +96,15 @@ const Raise = ({ onNoteRaised }) => {
                     placeholder="Reason for Proxy"
                     className="raise-input"
                 />
+
                 <input
-                    type="text"
+                    type="number"
                     value={classRoomNo}
                     onChange={(e) => setClassRoomNo(e.target.value)}
                     placeholder="Class Room No"
                     className="raise-input"
                 />
+
                 <input
                     type="text"
                     value={division}
@@ -108,6 +112,7 @@ const Raise = ({ onNoteRaised }) => {
                     placeholder="Division"
                     className="raise-input"
                 />
+
                 <input
                     type="text"
                     value={subjectName}
@@ -115,6 +120,7 @@ const Raise = ({ onNoteRaised }) => {
                     placeholder="Subject Name"
                     className="raise-input"
                 />
+
                 <label className="raise-label">Class Starting Time:</label>
                 <input
                     type="time"
@@ -122,6 +128,7 @@ const Raise = ({ onNoteRaised }) => {
                     onChange={(e) => setStartTime(e.target.value)}
                     className="raise-input"
                 />
+
                 <label className="raise-label">Class Ending Time:</label>
                 <input
                     type="time"
@@ -129,6 +136,7 @@ const Raise = ({ onNoteRaised }) => {
                     onChange={(e) => setEndTime(e.target.value)}
                     className="raise-input"
                 />
+
                 <button onClick={raiseNote} className="raise-button">Raise Note</button>
             </div>
         </main>

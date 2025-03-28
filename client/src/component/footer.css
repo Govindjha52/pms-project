@@ -1,4 +1,5 @@
 /* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -10,16 +11,18 @@ body {
     width: 100%;
 }
 
+
 /* Footer Container */
+
 .footer {
     background-color: #222f3d;
     color: white;
-    width: 100vw; /* Use viewport width to ensure full width */
-    position: relative; /* Ensure positioning relative to the viewport */
-    left: 50%; /* Shift the footer to the right */
-    right: 50%; /* Shift the footer to the left */
-    margin-left: -50vw; /* Offset the margin */
-    margin-right: -50vw; /* Offset the margin */
+    width: 99vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
     margin-top: 5rem;
     margin-bottom: -2rem;
     display: flex;
@@ -28,12 +31,14 @@ body {
     justify-content: center;
 }
 
+
 /* Footer Panel 1 (Back to Top) */
+
 .foot-panel1 {
+    padding: 20px 0px;
     background-color: #4b5157;
     color: white;
-    height: 50px;
-    width: 100%; /* Full width for the panel */
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,13 +53,15 @@ body {
     background-color: #3a3e43;
 }
 
+
 /* Footer Panel 2 (Links and Lists) */
+
 .foot-panel2 {
     display: flex;
     justify-content: space-between;
-    width: 100%; /* Full width for the panel */
-    max-width: 1200px; /* Centered max width */
-    padding: 20px 0;
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
     flex-wrap: wrap;
     text-align: left;
 }
@@ -86,9 +93,11 @@ body {
     color: #e74c3c;
 }
 
+
 /* Footer Panel 3 (Contact Info) */
+
 .foot-panel3 {
-    width: 100%; /* Full width for contact info */
+    width: 100%;
     text-align: center;
     padding: 20px 0;
     color: #ccc;
@@ -112,17 +121,23 @@ body {
     color: #e74c3c;
 }
 
+.foot-panel3 span {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+
 /* Footer Panel 4 (Bottom Section with Copyright and Links) */
+
 .foot-panel4 {
     background-color: #0f1111;
     color: white;
-    width: 100%; /* Full width for the panel */
-    padding: 15px;
+    width: 100%;
+    padding: 25px 50px;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    flex-direction: column;
-    text-align: center;
 }
 
 .pages {
@@ -140,73 +155,11 @@ body {
     color: #e74c3c;
 }
 
+.copyright a {
+    color: #aca6a6;
+}
+
 .copyright {
     font-size: 14px;
     color: #777777;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-    /* Stack vertically on smaller screens */
-    .foot-panel2 {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding: 0; /* Reduce padding for mobile */
-    }
-
-    /* Adjust margins for mobile */
-    .footer ul {
-        margin: 15px 0;
-    }
-
-    /* Smaller font sizes for links and text */
-    .footer ul strong {
-        font-size: 16px; /* Reduce strong font size */
-    }
-
-    .footer ul a {
-        font-size: 15px; /* Reduce link font size */
-    }
-
-    .foot-panel3 {
-        font-size: 15px; /* Reduce contact info font size */
-    }
-
-    .pages a {
-        font-size: 12px; /* Smaller font size */
-    }
-}
-
-@media (max-width: 480px) {
-    .foot-panel1 {
-        font-size: 14px; /* Smaller font size */
-    }
-
-    .footer ul strong {
-        font-size: 14px; /* Smaller strong font size */
-    }
-
-    .footer ul a {
-        font-size: 13px; /* Smaller link font size */
-    }
-
-    .foot-panel3 {
-        font-size: 14px; /* Smaller font size */
-    }
-
-    .pages a {
-        font-size: 12px; /* Smaller font size */
-    }
-
-    .copyright {
-        font-size: 12px; /* Smaller font size */
-    }
-}
-
-hr {
-    border: 0;
-    border-top: 2px solid #dec9c9; 
-    width: 100%;
-    margin: 1.5px 0;
 }

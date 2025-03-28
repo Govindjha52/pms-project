@@ -7,7 +7,7 @@ import PropTypes from 'prop-types';
 
 const Header = ({ notifications }) => {
     // State variables
-    const [notificationCount, setNotificationCount] = useState(0); // Initialize with 0
+    const [notificationCount, setNotificationCount] = useState(0); 
     const [showNotificationList, setShowNotificationList] = useState(false);
     const [readNotifications, setReadNotifications] = useState([]);
     const [acceptedNotes, setAcceptedNotes] = useState(new Set());
@@ -43,7 +43,7 @@ const Header = ({ notifications }) => {
     // Update notification count when new notifications are received
     useEffect(() => {
         setNotificationCount(
-            notifications.filter(note => !readNotifications.includes(note.id)).length // Unread notifications count
+            notifications.filter(note => !readNotifications.includes(note.id)).length 
         );
     }, [notifications, readNotifications]);
 
@@ -88,11 +88,13 @@ const Header = ({ notifications }) => {
             {/* Header Section */}
             <header className="header">
                 <img src={logo} alt="React Logo" className="header-logo" />
-                <div className="header-left">Proxy Management System</div>
+                <div className="header-left">
+                    <h2>Proxy Management System</h2>
+                    </div>
                 <div className="header-right">
                     <div className="notification-icon" onClick={toggleNotificationList}>
                         <FaBell className="icon" />
-                        <span className="notification-count">{notificationCount}</span> {/* Always show the count, even if it's 0 */}
+                        <span className="notification-count">{notificationCount}</span> 
                     </div>
                     <a href="/login">Login</a>
                 </div>

@@ -54,20 +54,20 @@ export default function Thought() {
         
         // Fade in the new quote
         setFade(true);
-      }, 500); // 500ms to wait for the fade-out
-    }, 10000); // Change every 10 seconds
+      }, 500); 
+    }, 10000); 
 
-    return () => clearInterval(interval); // Clean up interval on component unmount
+    return () => clearInterval(interval); 
   }, [quoteIndex]);
 
   return (
     <div
       style={{
         padding: '20px',
-        backgroundColor: bgColor,
+        // backgroundColor: bgColor,
         borderRadius: '10px',
         transition: 'background-color 0.5s ease',
-        height: '100px',
+       
         display: 'flex',
         alignItems: 'center',
         justifyContent: 'center',

@@ -2,6 +2,9 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 import './forgot.css';
+import email1 from '../../assests/gmail.png';
+import pass1 from '../../assests/password.png';
+
 
 const Forgot = () => {
   const [email, setEmail] = useState('');
@@ -25,7 +28,7 @@ const Forgot = () => {
 
     // Perform action if all validations pass
     console.log('Password changed for:', email);
-    navigate('/login'); // Redirect back to login after password change
+    navigate('/login'); 
   };
 
   return (
@@ -33,41 +36,45 @@ const Forgot = () => {
       <h2 id="form-title">Reset Password</h2><hr /><br />
 
       <div id="email-section">
-        <label htmlFor="forgot-email-input">Enter your email</label>
+        {/* <label htmlFor="forgot-email-input">Enter your email</label> */}
         <input
           id="forgot-email-input"
           type="email"
-          placeholder="Enter your email"
+          placeholder="Enter your email id: "
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          required // HTML5 validation
+          required 
         />
+        <img src={email1} alt="Role Logo" />
       </div>
 
       <div id="new-password-section">
-        <label htmlFor="forgot-new-password-input">New Password</label>
+        {/* <label htmlFor="forgot-new-password-input">New Password</label> */}
         <input
+          className='pass'
           id="forgot-new-password-input"
           type="password"
-          placeholder="Enter your new password"
+          placeholder="Enter your new password: "
           value={newPassword}
           onChange={(e) => setNewPassword(e.target.value)}
-          required // HTML5 validation
+          required 
         />
+        <img src={pass1} alt="Role Logo" />
       </div>
 
       <div id="confirm-password-section">
-        <label htmlFor="forgot-confirm-password-input">Confirm New Password</label>
+        {/* <label htmlFor="forgot-confirm-password-input">Confirm New Password</label> */}
         <input
+         className='pass'
           id="forgot-confirm-password-input"
           type="password"
-          placeholder="Confirm your new password"
+          placeholder="Confirm your new password "
           value={confirmPassword}
           onChange={(e) => setConfirmPassword(e.target.value)}
-          required // HTML5 validation
+          required 
         />
+        <img src={pass1} alt="Role Logo" />
       </div>
-
       <button id="forgot-button" type="submit">Submit</button>
     </form>
   );

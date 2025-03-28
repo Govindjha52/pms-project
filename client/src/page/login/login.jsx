@@ -1,12 +1,15 @@
 // eslint-disable-next-line no-unused-vars
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
-import './login.css';  // Keep the CSS file specific to this login page
+import './login.css';  
+import role1 from '../../assests/role.png';
+import user1 from '../../assests/user.png';
+import pass1 from '../../assests/password.png';
 
 const LoginForm = () => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [role, setRole] = useState('Admin');
+  const [role, setRole] = useState('');
   const navigate = useNavigate();
 
   const handleUsernameChange = (e) => {
@@ -29,46 +32,61 @@ const LoginForm = () => {
       alert('Both username and password are required!');
       return;
     }
+    if(role=='Admin' && username=='Govind' && password=='12345'){
+      console.log('Form submitted with:', username, password, role);
+      navigate('/home'); 
+    }
+    else{
+      alert('Invalid Credentials');
+    }
 
-    console.log('Form submitted with:', username, password, role);
-    navigate('/home'); 
   };
 
   return (
     <div id="login-page">
       <form id="login-form" onSubmit={handleSubmit}>
-        <h2 id="form-title">Proxy Management System</h2>
+        <h2 id="form-title">Proxy Management System (Login)</h2>
         <hr />
         <br />
 
         <div id="role-section">
-          <label htmlFor="role-select">Role</label>
+          {/* <label htmlFor="role-select">Role: </label> */}
           <select id="role-select" value={role} onChange={handleRoleChange} required>
+            <option value="select">Select Role: </option>
             <option value="Admin">Admin</option>
-            <option value="client">Teacher</option>
-          </select>
+            <option value="client">Teacher</option> 
+            </select>
+          <img src={role1} alt="Role Logo" />
+         
         </div>
 
         <div id="username-section">
-          <label htmlFor="username-input">Username</label>
+          {/* <label htmlFor="username-input">Username: </label> */}
           <input
+          className='user'
+          placeholder='Enter User Name: '
             id="username-input"
             type="text"
             value={username}
             onChange={handleUsernameChange}
-            required // HTML5 validation
+            //  autocomplete="off"
+            required 
           />
+         <img src={user1} alt="Role Logo" />
         </div>
 
         <div id="password-section">
-          <label htmlFor="password-input">Password</label>
+          {/* <label htmlFor="password-input">Password: </label> */}
           <input
+          className='pass'
+          placeholder='Enter Password here: '
             id="password-input"
             type="password"
             value={password}
             onChange={handlePasswordChange}
-            required // HTML5 validation
+            required 
           />
+            <img src={pass1} alt="Role Logo" />
         </div>
 
         <button id="login-button" type="submit">Login</button>

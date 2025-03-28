@@ -9,7 +9,7 @@ const Transaction = ({ notifications }) => {
             <h2>Transaction History</h2>
             <ul style={{ listStyleType: 'none', padding: 0 }}>
                 {notifications.length === 0 ? (
-                    <p>No notes raised yet.</p>
+                    <p>No Transaction history.</p>
                 ) : (
                     notifications.map((note) => (
                         <li key={note.id} style={{ margin: '10px 0' }}>

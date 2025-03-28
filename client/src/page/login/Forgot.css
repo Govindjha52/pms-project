@@ -1,9 +1,9 @@
 /* forgot.css */
 
 #forgot-password-form {
-    width: 100%; /* Full width on smaller screens */
-    max-width: 400px; /* Maximum width for larger screens */
-    margin: 0 auto;
+    width: 100%;
+    max-width: 600px;
+    margin: auto;
     padding: 20px;
     background-color: #f9f9f9;
     border: 1px solid #ccc;
@@ -13,7 +13,7 @@
 #forgot-password-form h2 {
     text-align: center;
     color: #333;
-    margin-bottom: 20px; /* Add margin for better spacing */
+    margin-bottom: 20px;
 }
 
 #forgot-password-form label {
@@ -22,13 +22,28 @@
     display: block;
 }
 
+#forgot-email-input {
+    background-position: left;
+    /* background-image: url('/src/assests/gmail.png'); */
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position-x: 15px;
+    outline: 0;
+}
+
+
+/* .pass {
+    background-image: url('../../assests/password.png');
+} */
+
 #forgot-password-form input {
     width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
+    padding: 15px;
+    margin-bottom: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
+    padding-left: 75px;
 }
 
 #forgot-password-form input::placeholder {
@@ -37,86 +52,15 @@
 
 #forgot-button {
     width: 100%;
-    padding: 10px;
+    padding: 15px;
     background-color: #4CAF50;
     color: white;
     border: none;
     border-radius: 4px;
     cursor: pointer;
-    font-size: 14px; /* Default button font size */
+    font-size: 14px;
 }
 
 #forgot-button:hover {
     background-color: #45a049;
-}
-
-/* Media queries for responsiveness */
-
-/* Small devices (mobile) */
-@media (max-width: 600px) {
-    #forgot-password-form {
-        margin-top: 7rem;
-        width: 350px; 
-        padding: 10px; 
-        border-radius: 6px; 
-    }
-
-    #forgot-password-form h2 {
-        font-size: 1.4rem; 
-        margin-bottom: 15px;
-    }
-
-    #forgot-password-form label {
-        font-size: 0.9rem; 
-    }
-
-    #forgot-button {
-        font-size: 1rem; 
-        padding: 8px; 
-    }
-
-    #forgot-password-form input {
-        font-size: 0.9rem; 
-        padding: 8px; 
-    }
-}
-
-/* Medium devices (tablets) */
-@media (min-width: 601px) and (max-width: 992px) {
-    #forgot-password-form {
-        margin-top: 5rem; 
-        padding: 25px; 
-    }
-
-    #forgot-password-form h2 {
-        font-size: 1.6rem; 
-    }
-
-    #forgot-button {
-        font-size: 1.1rem; 
-    }
-
-    #forgot-password-form input {
-        font-size: 1rem; 
-    }
-}
-
-/* Large devices (desktops) */
-@media (min-width: 993px) {
-    #forgot-password-form {
-        max-width: 500px; 
-        padding: 30px; 
-    }
-
-    #forgot-password-form h2 {
-        font-size: 1.8rem; 
-    }
-
-    #forgot-button {
-        font-size: 1.2rem; 
-    }
-
-    #forgot-password-form input {
-        font-size: 1rem; 
-    }
 }
