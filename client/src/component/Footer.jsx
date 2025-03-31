@@ -76,7 +76,7 @@ const Footer = () => {
           <a href="#">Interest-Based Ads</a>
         </div>
         <div className="copyright">
-          <a href="#">&copy; 2024. All the word are reserved || Proxy Management System Platform.com, Inc. or its affiliates.</a>
+          <a href="#">&copy; 2024-25. All the word are reserved || Proxy Management System Platform.com, Inc. or its affiliates.</a>
         </div>
       </div>
 

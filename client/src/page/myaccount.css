@@ -38,7 +38,7 @@ p {
     font-size: 17px;
     padding: 15px;
     outline: 0;
-    margin: 0px auto;
+    /* margin: 0px auto; */
 }
 
 #button-gr {
@@ -65,10 +65,21 @@ p {
 
 #button-gr button:hover {
     border-color: unset;
+    opacity: 0.85;
 }
 
 
 /* Responsive design adjustments */
+
+@media only screen and (max-width:600px) {
+    .button-gr {
+        gap: 20px;
+    }
+    #button-gr button {
+        width: 100%;
+        margin: 10px;
+    }
+}
 
 @media only screen and (max-width:601px) and (max-width:900px) {
     .box {

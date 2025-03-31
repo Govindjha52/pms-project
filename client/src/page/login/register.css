@@ -69,6 +69,10 @@ input#username-input {
     -webkit-box-shadow: 0 0 0px 1000px white inset;
 }
 
+img.res {
+    top: 60% !important;
+}
+
 
 /* .pass,
 .user,

@@ -270,4 +270,18 @@ body {
 
 /* ------------  responsive Design  --------- */
 
-@media only screen and (max-width:600px) {}
+@media only screen and (max-width:600px) {
+    .note-details-modal {
+        width: 100%;
+        z-index: 54546444;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:950px) {
+    .note-details-modal {
+        width: 100%;
+        top: 32%;
+        left: 50%;
+        z-index: 65464654654;
+    }
+}

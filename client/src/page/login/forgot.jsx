@@ -45,7 +45,7 @@ const Forgot = () => {
           onChange={(e) => setEmail(e.target.value)}
           required 
         />
-        <img src={email1} alt="Role Logo" />
+        <img src={email1} alt="Role Logo" className='mail' />
       </div>
 
       <div id="new-password-section">
@@ -59,7 +59,7 @@ const Forgot = () => {
           onChange={(e) => setNewPassword(e.target.value)}
           required 
         />
-        <img src={pass1} alt="Role Logo" />
+        <img src={pass1} alt="Role Logo" className='mail' />
       </div>
 
       <div id="confirm-password-section">
@@ -73,7 +73,7 @@ const Forgot = () => {
           onChange={(e) => setConfirmPassword(e.target.value)}
           required 
         />
-        <img src={pass1} alt="Role Logo" />
+        <img src={pass1} alt="Role Logo" className='mail' />
       </div>
       <button id="forgot-button" type="submit">Submit</button>
     </form>

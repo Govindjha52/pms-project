@@ -82,8 +82,8 @@ const MyAccount = ({ onNoteAccepted }) => {
             <p>Notes Accepted: {acceptedNotesCount}</p>
 
             <div id='button-gr'>
-                <button onClick={raiseNote}>Raise Note</button> &nbsp;
-                <button onClick={acceptNote}>Accept Note</button> &nbsp;
+                <button onClick={raiseNote}>Raise Note</button> 
+                <button onClick={acceptNote}>Accept Note</button> 
                 <button onClick={withdrawAmount}>Withdraw Amount</button>
                 <button onClick={Addamount}>Add Amount </button>
             </div>

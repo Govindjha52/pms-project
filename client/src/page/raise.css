@@ -91,11 +91,11 @@ main {
 
 /* ----------- responsive Design---------*/
 
-@media only screen and (max-width:601px) and (max-width:900px) {
+@media only screen and (min-width:601px) and (max-width:900px) {
     #root {
         padding: unset !important;
     }
-    .note-details-modal {
+    /* .note-details-modal {
         width: 100%;
         position: fixed;
         top: 9%;
@@ -106,5 +106,5 @@ main {
         border-radius: 8px;
         margin: auto;
         z-index: 46514315;
-    }
+    } */
 }

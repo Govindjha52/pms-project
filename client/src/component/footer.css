@@ -138,11 +138,14 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
-.pages {
+
+/* .pages {
     margin-bottom: 10px;
-}
+} */
 
 .pages a {
     color: #dddddd;
@@ -159,7 +162,38 @@ body {
     color: #aca6a6;
 }
 
+.copyright a:hover {
+    color: white;
+}
+
 .copyright {
     font-size: 14px;
     color: #777777;
+}
+
+
+/*----- responsive for mobile devices ---*/
+
+@media only screen and (max-width:600px) {
+    .footer ul {
+        margin: auto;
+        width: 100%;
+        padding: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+    .foot-panel4 {
+        padding: 10px 0px;
+    }
+}
+
+@media only screen and (min-width:601px) and (max-width:900px) {
+    .foot-panel2 {
+        position: relative;
+    }
+    .contact-info {
+        position: absolute;
+        bottom: 215px;
+        right: 50px;
+    }
 }

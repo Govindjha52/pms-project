@@ -6,6 +6,7 @@ import './register.css';
 import role1 from '../../assests/role.png';
 import user1 from '../../assests/user.png';
 import pass1 from '../../assests/password.png';
+import email1 from '../../assests/gmail.png';
 
 
 const Register = () => {
@@ -58,11 +59,11 @@ const Register = () => {
           <option value="client">Teacher</option>
         </select>
 
-        <img src={role1} alt="Role Logo" />
+        <img src={role1} alt="Role Logo" className='res' />
       </div>
 
       <div className="form-group" id="username-section">
-        {/* <label htmlFor="register-username-input">Username:</label> */}
+  
         <input
          className='user'
           id="register-username-input"
@@ -72,8 +73,9 @@ const Register = () => {
           onChange={(e) => setUsername(e.target.value)}
           required 
         />
-          <img src={user1} alt="Role Logo" />
+          <img src={user1} alt="Role Logo" className='res'/>
       </div>
+
 
       <div className="form-group" id="password-section">
         {/* <label htmlFor="register-password-input">Password:</label> */}
@@ -86,7 +88,7 @@ const Register = () => {
           onChange={(e) => setPassword(e.target.value)}
           required 
         />
-          <img src={pass1} alt="Role Logo" />
+          <img src={pass1} alt="Role Logo" className='res'/>
       </div>
 
       <div className="form-group" id="confirm-password-section">
@@ -100,7 +102,7 @@ const Register = () => {
           onChange={(e) => setConformPassword(e.target.value)}
           required />
           
-          <img src={pass1} alt="password img" />
+          <img src={pass1} alt="password img" className='res' />
       </div>
 
       <button id="register-button" type="submit">

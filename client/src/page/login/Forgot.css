@@ -37,6 +37,7 @@
 } */
 
 #forgot-password-form input {
+    outline: 0;
     width: 100%;
     padding: 15px;
     margin-bottom: 10px;
@@ -59,8 +60,13 @@
     border-radius: 4px;
     cursor: pointer;
     font-size: 14px;
+    outline: 0;
 }
 
 #forgot-button:hover {
     background-color: #45a049;
+}
+
+.mail {
+    top: 45% !important;
 }
