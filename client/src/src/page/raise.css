@@ -1,0 +1,110 @@
+/* Container for the Raise Note component */
+
+main {
+    max-width: unset !important;
+}
+
+.raise-container {
+    padding: 20px;
+    width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Title styling */
+
+.raise-title {
+    font-size: 30px;
+    color: #34495e;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+
+/* Form styling */
+
+.raise-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Input field styling */
+
+.raise-input {
+    padding: 15px;
+    border: 1px solid #dcdde1;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+
+/* Input field focus styling */
+
+.raise-input:focus {
+    border-color: #2980b9;
+    outline: none;
+}
+
+
+/* Button styling */
+
+.raise-button {
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 20px;
+    font-weight: 500;
+    color: white;
+    background-color: #27ae60;
+    transition: background-color 0.3s ease;
+}
+
+.raise-form button:focus {
+    outline: unset;
+}
+
+
+/* Button hover styling */
+
+.raise-button:hover {
+    background-color: #2ecc71;
+}
+
+
+/* Label styling */
+
+.raise-label {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #34495e;
+    text-align: left;
+}
+
+
+/* ----------- responsive Design---------*/
+
+@media only screen and (min-width:601px) and (max-width:900px) {
+    #root {
+        padding: unset !important;
+    }
+    /* .note-details-modal {
+        width: 100%;
+        position: fixed;
+        top: 9%;
+        left: 0%;
+        background: #fff;
+        padding: 30px;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+        border-radius: 8px;
+        margin: auto;
+        z-index: 46514315;
+    } */
+}
