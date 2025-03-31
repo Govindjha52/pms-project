@@ -40,6 +40,7 @@ body {
     color: #2c3e50;
     flex-grow: 1;
     text-align: center;
+    margin: 0;
 }
 
 .header-right {
@@ -274,6 +275,37 @@ body {
     .note-details-modal {
         width: 100%;
         z-index: 54546444;
+    }
+    .header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        width: 100%;
+        padding: 20px 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 1000;
+    }
+    .header-left {
+        position: absolute;
+        bottom: 0;
+        left: 10px;
+        transform: translate(10px, 30px);
+    }
+    .header-left h2 {
+        margin: 0;
+        display: none;
+    }
+    .home-container {
+        margin-top: unset !important;
+    }
+    .header-nav ul {
+        justify-content: space-between;
+        gap: 15px;
     }
 }
 
