@@ -22,7 +22,7 @@ app.use(bodyParser.json());
 app.use('./api/authRoutes', authRoutes);
 app.use('./api/note', notesRoutes);
 app.use('./api/transactions', transactionsRoutes);
-app.use('/api/account', accountRoutes);
+app.use('./api/account', accountRoutes);
 
 const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {

@@ -1,12 +1,11 @@
 const express = require('express');
 const { registerUser, loginUser } = require('../controllers/authController');
+const { default: Forgot } = require('../../client/src/page/login/forgot');
 const router = express.Router();
 
-// Registration route
-router.post('/register', registerUser);
 
-// Login route
+router.post('/register', registerUser);
 router.post('/login', loginUser);
-router.post('/forgot-password', Reset);
+router.post('/forgot-password', Forgot);
 
 module.exports = router;

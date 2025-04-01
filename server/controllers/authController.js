@@ -1,13 +1,14 @@
 const jwt = require('jsonwebtoken');
 const User = require('../models/User');
 const nodemailer = require('nodemailer');
+const { errorMonitor } = require('nodemailer/lib/xoauth2');
 
 const generateToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, { expiresIn: '30d' });
 };
 
 // Registration logic
-const registerUser = async (req, res) => {
+const registerUser = async(req, res) => {
     const { name, email, password } = req.body;
     try {
         const userExists = await User.findOne({ email });
@@ -60,7 +61,7 @@ const registerUser = async (req, res) => {
 };
 
 // Login logic
-const loginUser = async (req, res) => {
+const loginUser = async(req, res) => {
     const { email, password } = req.body;
 
     try {
@@ -80,5 +81,29 @@ const loginUser = async (req, res) => {
         res.status(500).json({ message: 'Server error' });
     }
 };
+
+
+// Forgot  Logic
+
+const forgotuser = async(req, res) => {
+    const { email } = req.body;
+    try {
+        const emailexists = await User.findOne({ email });
+        if (emailexists) {
+            return res.status(400).json({ message: 'mail are deliver in your gmail for reset your password ..' });
+
+            const otpGenerator = require('otp-generator')
+            otpGenerator.generate(6, { upperCaseAlphabets: false, specialChars: false });
+
+        }
+
+        // Nodemailer send mail for Reset the password.
+
+    } catch {
+        return res.status(400).json({ message: "Email doesn't exists ...! " });
+    }
+}
+
+
 
 module.exports = { registerUser, loginUser };
