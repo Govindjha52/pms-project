@@ -35,7 +35,7 @@ function App() {
                     <Route path="/home" element={<Home notifications={notifications} />} />
                     <Route path="/raise-note" element={<Raise onNoteRaised={handleNoteRaised} />} />
                     <Route path="/my-account" element={<MyAccount />} />
-                    <Route path="/transaction-history" element={<Transaction notifications={notifications} />} />
+{/*                     <Route path="/transaction-history" element={<Transaction notifications={notifications} />} /> */}
                     <Route path="/my-wallet" element={<MyWallet />} />
                     <Route path="/login" element={<Login />} />
                     <Route path="/registration" element={<Register />} /> 
