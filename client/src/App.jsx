@@ -6,7 +6,7 @@ import Header from './component/Header';
 import Home from './page/Home';
 import Raise from './page/raise_note'; 
 import MyAccount from './page/My_account'; 
-import Transaction from './page/Transaction_History'; 
+// import Transaction from './page/Transaction_History'; 
 import MyWallet from './page/Mywallet'; 
 import Login from './page/login/login';
 import Register from './page/login/register';
